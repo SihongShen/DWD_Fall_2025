@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+}
+
+#sketchGalleryDiv {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    width: 600px;
+    height: 400px;
+}
