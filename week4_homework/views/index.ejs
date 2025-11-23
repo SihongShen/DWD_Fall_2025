@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Diary</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body id="main">
+    <div id="container">
+        <h1 id="title">My Diary</h1>
+
+        <form id="entryForm" method="POST" action="/addEntry">
+            <textarea id="entryText" name="entryText" rows="4" cols="40"
+                placeholder="Write your thoughts..."></textarea><br>
+            <button id="addButton" type="submit">Add</button>
+        </form>
+
+        <hr>
+        <h2 id="subtitle">Past days</h2>
+
+        <% for(let i = diaryEntries.length - 1; i >= 0; i--) { %>
+            <div class="diary-entry">
+                <p><%= diaryEntries[i].text %></p>
+                <small><%= diaryEntries[i].time %></small>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

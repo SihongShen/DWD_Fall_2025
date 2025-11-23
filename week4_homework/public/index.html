@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Diary</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body id="main">
+    <div id="container">
+        <h1 id="title">My Diary</h1>
+
+        <form id="entryForm" action="/addEntry" method="post">
+            <textarea id="entryText" name="entryText" rows="4" cols="40" placeholder="Write your thoughts..."></textarea><br>
+            <button id="submitButton" type="submit">Add</button>
+        </form>
+
+        <hr>
+        <h2 id="subtitle">Past days</h2>
+
+        <div id="entries">
+            <!-- entries populated here -->
+        </div>
+    </div>
+    <script src="/index.js" defer></script>
+</body>
+</html>
